@@ -5,14 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "JTCalendar",
+    platforms: [
+               .iOS("10.0"),
+               .tvOS("10.0"),
+               .watchOS("3.0"),
+               .macOS("10.12")
+           ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        platforms: [
-            .iOS("10.0"),
-            .tvOS("10.0"),
-            .watchOS("3.0"),
-            .macOS("10.12")
-        ],
         .library(
             name: "JTCalendar",
             targets: ["JTCalendar"]),
