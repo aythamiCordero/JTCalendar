@@ -27,8 +27,5 @@ let package = Package(
         .target(
             name: "JTCalendar",
             dependencies: []),
-        .testTarget(
-            name: "JTCalendarTests",
-            dependencies: ["JTCalendar"]),
     ]
 )
